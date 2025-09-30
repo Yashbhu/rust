@@ -1,11 +1,15 @@
 use std::io;
-
 fn main(){
-    println!("guess the number");
-    println!("enter");
+    println!("Guess the number!");
+    println!("Please input your guess.");
+    //mut mutable and new is assosciative function of the string instance
+
     let mut guess = String::new();
-
-    io::stdin().read_line(&mut guess).expect("failed to read line");
-    println!("your guess: {guess}");
-
+   // getting stdin standard input from the io module
+   //if we dont import it from beginneing then we have to use std::io::stdin()
+   //readline is a method that takesa mutablerefrence to stirng by
+   //passing &mut guess
+    io::stdin().read_line(&mut guess)
+        .expect("Failed to read line");
+    println!("You guessed: {}", guess);
 }
