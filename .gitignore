@@ -3,7 +3,9 @@ target/
 **/target/
 #cargp
 Cargo.lock
+**/Cargo.lock
 Cargo.toml.orig
+**/Cargo.toml.orig
 #rust toolchain files
 *.rs.bk
 *.pdb
