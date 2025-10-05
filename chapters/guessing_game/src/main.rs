@@ -9,7 +9,10 @@ fn main(){
    //if we dont import it from beginneing then we have to use std::io::stdin()
    //readline is a method that takesa mutablerefrence to stirng by
    //passing &mut guess
-    io::stdin().read_line(&mut guess)
-        .expect("Failed to read line");
-    println!("You guessed: {}", guess);
+   io::stdin().read_line(&mut guess)
+   .expect("it failed to read line");//read_line returns a Result type //result is enum that means its a type which can be possinly in more than one or multiple states
+   //result has error handeling info 
+   //it expects if err throw error message and ok display value
+   //if no expect then it will cmpile but u get waring
+   println!("your guess: {guess}");
 }
