@@ -1,0 +1,14 @@
+#rust build outputs
+target/
+**/target/
+#cargp
+Cargo.lock
+Cargo.toml.orig
+#rust toolchain files
+*.rs.bk
+*.pdb
+*.dSYM/
+*.exe
+*.dll
+*.so
+*.dylib
