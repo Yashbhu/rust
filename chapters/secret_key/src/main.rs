@@ -12,4 +12,5 @@ fn main() {
     .expect("it failed to read line");
     println!("your guess: {guess}");
 
+    println!("game ending");
 }
